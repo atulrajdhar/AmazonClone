@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import {Text, View} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import styles from './styles';
-import Button from '../../components/Button';
 import QuantitySelector from '../../components/QuantitySelector';
+import Button from '../../components/Button';
+import ImageCarousel from '../../components/ImageCarousel';
 import product from '../../data/product';
 
 const ProductScreen = () => {
@@ -13,10 +14,11 @@ const ProductScreen = () => {
   const [quantity, setQuantity] = useState(1);
 
   return (
-    <View>
+    <View style={styles.root}>
       <Text style={styles.title}>{product.title}</Text>
 
       {/* Image corousel */}
+      <ImageCarousel images={product.images} />
 
       {/* Option Selector */}
       <Picker
@@ -47,6 +49,7 @@ const ProductScreen = () => {
         onPress={() => {
           console.warn('Add to cart');
         }}
+        containerStyles={{backgroundColor: '#e3c905'}}
       />
       <Button
         text={'Buy Now'}
