@@ -4,12 +4,12 @@ const styles = StyleSheet.create({
   page: {
     padding: 10,
   },
-  root: {    
+  root: {
     borderWidth: 1,
     borderColor: '#d1d1d1',
     borderRadius: 10,
     backgroundColor: '#fff',
-    marginVertical: 5,    
+    marginVertical: 5,
   },
   row: {
     flexDirection: 'row',
@@ -43,8 +43,7 @@ const styles = StyleSheet.create({
     textDecorationLine: 'line-through',
   },
   quantityContainer: {
-      marginVertical: 10,
-      marginLeft: 30,
+      margin: 5,
   }
 });
 
