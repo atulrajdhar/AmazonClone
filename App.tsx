@@ -19,7 +19,9 @@
    Colors,
  } from 'react-native/Libraries/NewAppScreen';
 
- import AddressScreen from './src/screens/AddressScreen';
+ import 'react-native-gesture-handler';
+
+import Router from './src/router';
 
  const App = () => {
    const isDarkMode = useColorScheme() === 'dark';
@@ -31,7 +33,7 @@
    return (
      <SafeAreaView style={backgroundStyle}>
        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <AddressScreen />
+       <Router />
      </SafeAreaView>
    );
  };
