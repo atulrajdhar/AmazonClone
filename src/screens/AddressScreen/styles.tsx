@@ -17,6 +17,9 @@ const styles = StyleSheet.create({
     borderColor: 'lightgray',
     borderRadius: 2,
   },
+  errorLabel: {
+    color: 'red',
+  }
 });
 
 export default styles;
